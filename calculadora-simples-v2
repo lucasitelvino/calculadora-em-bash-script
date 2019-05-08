@@ -1,0 +1,32 @@
+#!/bin/bash
+
+i="y"
+while [ $i = "y" ]
+do
+
+echo -n "escolha o primeiro numero: "; read num1
+echo -n "escolha a operacao ' - + * / ': "; read op
+echo -n "escolha o segundo numero: "; read num2
+
+if [ "$op" = '-' ]; then
+tipo=subtracao
+elif [ "$op" = '+' ]; then
+tipo=soma
+elif [ "$op" = '*' ]; then
+tipo=multiplicacao
+elif [ "$op" = '/' ]; then
+tipo=divisao
+else
+echo "escolha uma operacao valida"
+exit
+fi
+
+echo -n "resultado da $tipo: "; echo "$(($num1 $op $num2))"
+
+echo "Voce quer continuar (y/n)?"
+read i
+if [ $i != "y" ]
+then
+exit
+fi
+done
