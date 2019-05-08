@@ -1,0 +1,16 @@
+#!/bin/bash
+
+i="y"
+while [ $i = "y" ]
+do
+
+read numop
+echo -n "$num = "; echo "$(($numop))"
+
+echo "Voce quer continuar (y/n)?"
+read i
+if [ $i != "y" ]
+then
+exit
+fi
+done
