@@ -5,7 +5,7 @@ while [ $i = "y" ]
 do
 
 read numop
-echo -n "$num = "; echo "$(($numop))"
+echo -n "$numop = "; echo "$(($numop))"
 
 echo "Voce quer continuar (y/n)?"
 read i
