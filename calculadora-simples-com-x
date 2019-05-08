@@ -9,15 +9,15 @@ echo -n "escolha o primeiro numero: "; read num1
 echo -n "escolha a operacao ' - + * / x ': "; read op
 echo -n "escolha o segundo numero: "; read num2
 
-if ["$op"='-']; then
+if [ "$op" = '-' ]; then
 echo "$(($num1 - $num2))"
-elif ["$op"='+']; then
+elif [ "$op" = '+' ]; then
 echo "$(($num1 + $num2))"
-elif ["$op"='*']; then
+elif [ "$op" = '*' ]; then
 echo "$(($num1 * $num2))"
-elif ["$op"= 'x' ]; then
+elif [ "$op" = 'x' ]; then
 echo "$(($num1 * $num2))"
-elif ["$op"= '/' ]; then
+elif [ "$op" = '/' ]; then
 echo "$(($num1 / $num2))"
 
 else
