@@ -1,0 +1,19 @@
+#!/bin/bash
+
+i="y"
+while [ $i = "y" ]
+do
+
+read num1
+read op
+read num2
+
+echo -n "$num1 $op $num2 = "; echo "$(($num1 $op $num2))"
+
+echo "Voce quer continuar (y/n)?"
+read i
+if [ $i != "y" ]
+then
+exit
+fi
+done
