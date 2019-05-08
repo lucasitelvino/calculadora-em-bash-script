@@ -29,3 +29,5 @@ read i
 if [ $i != "y" ]
 then
 exit
+fi
+done
