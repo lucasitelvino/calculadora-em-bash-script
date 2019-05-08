@@ -1,7 +1,8 @@
 #!/bin/bash
 
+
 i="y"
-while[$i="y"]
+while [ $i = "y" ]
 do
 
 echo -n "escolha o primeiro numero: "; read num1
